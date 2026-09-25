@@ -61,7 +61,7 @@ Instead of hand-designing a deep net, I used **automated architecture search** s
 | File | Task | Data |
 |------|------|------|
 | `01-spam.ipynb` | Spam / ham | UCI SMS Spam Collection |
-| `02-review-recommend.ipynb` | Recommend / not | Women’s clothing reviews (Kaggle) |
+| `02-review-recommend.ipynb` | Recommend / not | `data/review.csv` (Kaggle women’s clothing — drop file in) |
 
 ### Pipeline
 ```
@@ -91,6 +91,8 @@ cd text-classification
 pip install -r requirements.txt
 jupyter notebook 01-spam.ipynb
 ```
+
+**Data:** `data/sms_spam_collection.tsv` (UCI, vendored) · `data/review.csv` (you supply from Kaggle)
 
 **Stack:** `autokeras` · `tensorflow` · `pandas` · `scikit-learn`
 
